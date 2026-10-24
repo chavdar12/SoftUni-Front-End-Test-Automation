@@ -1,0 +1,15 @@
+<Project>
+  <!-- Projects pick their toolset with <TestKind> in the csproj, which is only visible here, not in Directory.Build.props. -->
+  <ItemGroup Condition="'$(TestKind)' == 'Web'">
+    <!-- 4.44+ renamed the assembly to Selenium.WebDriver.dll, which breaks SeleniumExtras.WaitHelpers (ExpectedConditions) used by the course code. -->
+    <PackageReference Include="Selenium.WebDriver" Version="4.43.0" />
+    <PackageReference Include="Selenium.Support" Version="4.43.0" />
+    <PackageReference Include="SeleniumExtras.WaitHelpers" Version="1.0.2" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestShared/Browser.cs" Link="Browser.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TestKind)' == 'Appium'">
+    <PackageReference Include="Appium.WebDriver" Version="8.4.0" />
+    <Compile Include="$(MSBuildThisFileDirectory)TestShared/AppiumServer.cs" Link="AppiumServer.cs" />
+  </ItemGroup>
+</Project>

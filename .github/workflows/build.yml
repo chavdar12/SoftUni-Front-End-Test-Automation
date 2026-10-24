@@ -1,0 +1,37 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    # ubuntu-latest ships Google Chrome; Selenium Manager fetches the matching chromedriver.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # Lessons 006 and 015 test SoftUni's Student Registry app, which is no longer hosted; run it locally on port 8080.
+      - name: Start Student Registry app
+        run: |
+          git clone https://github.com/nakov/MVC-app-integration-tests-example-mocha.git "$RUNNER_TEMP/student-registry"
+          cd "$RUNNER_TEMP/student-registry"
+          git checkout 199394948c8a39edf1b7f0dd386a4aaf5787c6d7
+          npm install
+          nohup npm start > app.log 2>&1 &
+          curl --silent --fail --retry 15 --retry-connrefused --retry-delay 1 http://localhost:8080/ > /dev/null
+
+      - run: dotnet restore SoftUni-Front-End-Test-Automation.slnx
+
+      - run: dotnet build SoftUni-Front-End-Test-Automation.slnx --no-restore --configuration Release
+
+      - run: dotnet test SoftUni-Front-End-Test-Automation.slnx --no-build --configuration Release --logger "console;verbosity=normal"

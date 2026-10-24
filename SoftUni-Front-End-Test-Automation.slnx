@@ -1,0 +1,65 @@
+<Solution>
+  <Folder Name="/001-Course-Introduction/">
+    <Project Path="001-Course-Introduction/CourseIntroductionTests/CourseIntroductionTests.csproj" />
+  </Folder>
+  <Folder Name="/002-Selenium-Introduction/">
+    <Project Path="002-Selenium-Introduction/SeleniumIntroductionTests/SeleniumIntroductionTests.csproj" />
+  </Folder>
+  <Folder Name="/003-Exercise-Selenium-Introduction-IDE/">
+    <Project Path="003-Exercise-Selenium-Introduction-IDE/SeleniumIdeTests/SeleniumIdeTests.csproj" />
+  </Folder>
+  <Folder Name="/004-Selenium-WebDriver/">
+    <Project Path="004-Selenium-WebDriver/SeleniumWebDriverTests/SeleniumWebDriverTests.csproj" />
+  </Folder>
+  <Folder Name="/005-Selenium-WebDriver-Wait/">
+    <Project Path="005-Selenium-WebDriver-Wait/SeleniumWaitTests/SeleniumWaitTests.csproj" />
+  </Folder>
+  <Folder Name="/006-Selenium-WebDriver-POM/">
+    <Project Path="006-Selenium-WebDriver-POM/SeleniumPomTests/SeleniumPomTests.csproj" />
+  </Folder>
+  <Folder Name="/007-Exercise-Selenium-WebDriver-POM/">
+    <Project Path="007-Exercise-Selenium-WebDriver-POM/SeleniumPomExerciseTests/SeleniumPomExerciseTests.csproj" />
+  </Folder>
+  <Folder Name="/008-Appium-Testing/">
+    <Project Path="008-Appium-Testing/AppiumTests/AppiumTests.csproj" />
+  </Folder>
+  <Folder Name="/009-Appium-Desktop/">
+    <Project Path="009-Appium-Desktop/AppiumDesktopTests/AppiumDesktopTests.csproj" />
+  </Folder>
+  <Folder Name="/010-Appium-Mobile/">
+    <Project Path="010-Appium-Mobile/AppiumMobileTests/AppiumMobileTests.csproj" />
+  </Folder>
+  <Folder Name="/011-SIKULI/">
+    <Project Path="011-SIKULI/SikuliTests/SikuliTests.csproj" />
+  </Folder>
+  <Folder Name="/012-Exercise-SIKULI-Web-Desktop/">
+    <Project Path="012-Exercise-SIKULI-Web-Desktop/ExerciseSikuliWebDesktopTests/ExerciseSikuliWebDesktopTests.csproj" />
+  </Folder>
+  <Folder Name="/013-Exercise-SIKULI-Mobile/">
+    <Project Path="013-Exercise-SIKULI-Mobile/ExerciseSikuliMobileTests/ExerciseSikuliMobileTests.csproj" />
+  </Folder>
+  <Folder Name="/014-Test-Automation-Architecture/">
+    <Project Path="014-Test-Automation-Architecture/TestAutomationArchitectureTests/TestAutomationArchitectureTests.csproj" />
+  </Folder>
+  <Folder Name="/015-Workshop-Building-a-CI-System-with-Selenium-and-Appium-Automated-Tests/">
+    <Project Path="015-Workshop-Building-a-CI-System-with-Selenium-and-Appium-Automated-Tests/StudentRegistryTests/StudentRegistryTests.csproj" />
+  </Folder>
+  <Folder Name="/016-Workshop-Building-a-CI-System-with-Selenium-and-Appium-Automated-Tests/">
+    <Project Path="016-Workshop-Building-a-CI-System-with-Selenium-and-Appium-Automated-Tests/SeleniumIdeTests/SeleniumIdeTests.csproj" />
+  </Folder>
+  <Folder Name="/017-Security-and-types-of-security-testing/">
+    <Project Path="017-Security-and-types-of-security-testing/SecurityTests/SecurityTests.csproj" />
+  </Folder>
+  <Folder Name="/018-Exercise-Security/">
+    <Project Path="018-Exercise-Security/ExerciseSecurityPart1Tests/ExerciseSecurityPart1Tests.csproj" />
+  </Folder>
+  <Folder Name="/019-Exercise-Security/">
+    <Project Path="019-Exercise-Security/ExerciseSecurityPart2Tests/ExerciseSecurityPart2Tests.csproj" />
+  </Folder>
+  <Folder Name="/020-Exam-Preparation/">
+    <Project Path="020-Exam-Preparation/IdeaCenterTests/IdeaCenterTests.csproj" />
+  </Folder>
+  <Folder Name="/021-Exam-Preparation/">
+    <Project Path="021-Exam-Preparation/RevueCraftersTests/RevueCraftersTests.csproj" />
+  </Folder>
+</Solution>

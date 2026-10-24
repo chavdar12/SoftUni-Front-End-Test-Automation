@@ -1,0 +1,1437 @@
+{
+  "id": "56822bc1-ef20-4f39-92e7-4bfbaad56618",
+  "version": "2.0",
+  "name": "Selenium Introduction IDE - Exercise",
+  "url": "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com/number-calculator/",
+  "tests": [
+    {
+      "id": "2e23c97b-1b1c-492f-b86c-e2ad49c098f3",
+      "name": "1.1. First Field Invalid Input",
+      "commands": [
+        {
+          "id": "a06bf554-e668-4cba-a310-8c26811d8703",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d6c4b25f-a59d-4ba2-ae7e-d728fa82e46b",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "abc"
+        },
+        {
+          "id": "8337251d-267c-40cd-a322-cbe8fdac6923",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "33fcf412-8c72-4521-9936-a3647e9f4a15",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "label=+ (sum)"
+        },
+        {
+          "id": "a6a4d24f-9889-4e7f-8350-6eadd2988ab8",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "4"
+        },
+        {
+          "id": "7b4845a5-a64e-43b7-899c-7b95d4963ba5",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ed67095c-d0ca-4ab1-90c3-c4b02bba807c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=i",
+          "targets": [
+            [
+              "css=i",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='result']/i",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//i",
+              "xpath:position"
+            ],
+            [
+              "xpath=//i[contains(.,'invalid input')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "invalid input"
+        },
+        {
+          "id": "e8335bb3-52c4-4a5c-b905-487937a4e11e",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "a307a32a-dc85-4852-b2a1-d09777d32f91",
+      "name": "1.1. Second Field Invalid Input",
+      "commands": [
+        {
+          "id": "b69fa6ac-2dee-4e20-b590-5749a7d7bbbf",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2cb06393-a000-449a-a2b3-2a43ca3e4814",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "4"
+        },
+        {
+          "id": "afe38022-383d-4cf2-ae85-9be410d8326f",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3bcd4635-c562-40a2-b630-d7149b9081c8",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "label=+ (sum)"
+        },
+        {
+          "id": "0237697e-d828-4606-8191-d8f1bf92e9db",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "abc"
+        },
+        {
+          "id": "6a04a04c-22aa-4f09-9b0a-8da5d9aca755",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "83eadf45-c41c-4ed0-a952-c0bd999bbb79",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=i",
+          "targets": [
+            [
+              "css=i",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='result']/i",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//i",
+              "xpath:position"
+            ],
+            [
+              "xpath=//i[contains(.,'invalid input')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "invalid input"
+        },
+        {
+          "id": "0e755965-e763-4b09-8796-58c9ff5c16da",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e9a15b59-84ae-4f20-b650-609f37bf3880",
+      "name": "1.1. First Field Empty Input",
+      "commands": [
+        {
+          "id": "59d274da-a6c3-430a-9925-f4880e20bf10",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "be9f2d04-57cc-4a18-8de3-b643ab6f1491",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e06f8e91-4847-4dfb-a9e9-7bdb09fe7e55",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "label=+ (sum)"
+        },
+        {
+          "id": "ab5737ae-50a2-4d64-9508-41b6f8b8c439",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "4"
+        },
+        {
+          "id": "9d34acd6-f596-4de5-a109-972900123039",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5b916fd0-25b1-4b3b-8812-0e450861e67c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=i",
+          "targets": [
+            [
+              "css=i",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='result']/i",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//i",
+              "xpath:position"
+            ],
+            [
+              "xpath=//i[contains(.,'invalid input')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "invalid input"
+        },
+        {
+          "id": "8f1b3155-4735-4928-b905-d6ee81401901",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "c3586e29-3395-41df-b1c3-3260e99d94e5",
+      "name": "1.1. Second Field Empty Input",
+      "commands": [
+        {
+          "id": "da978a53-ff0c-4e7e-b70e-bb36ee3fa654",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b6562577-fa4c-4250-a733-3dd3c0634b87",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "4"
+        },
+        {
+          "id": "aa63b9b6-ae5d-47be-8837-885bf67354dc",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5c7a46f5-7747-4eda-b542-87a83a83418a",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "label=+ (sum)"
+        },
+        {
+          "id": "2e606dd4-626b-4421-b9fd-3c940fd9e756",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "08e019a7-d145-4f08-8620-0f75133989ea",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=i",
+          "targets": [
+            [
+              "css=i",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='result']/i",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//i",
+              "xpath:position"
+            ],
+            [
+              "xpath=//i[contains(.,'invalid input')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "invalid input"
+        },
+        {
+          "id": "09faf484-1e94-4d0f-b6a3-390d6390e361",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b97c594d-da1d-459c-8f41-6055ec14f9a5",
+      "name": "1.1. Both Fields Empty Inputs",
+      "commands": [
+        {
+          "id": "5afe608a-3108-4b7d-9b39-0068e1482beb",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "762dda1e-6948-4351-9d09-679e9faa7b78",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "335feb49-bcd6-4192-933a-3c4dcf53a955",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "label=+ (sum)"
+        },
+        {
+          "id": "9048c68c-b929-47ab-b16f-0295857a61f7",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "58692547-793b-437f-b17c-f6324fe513c5",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=i",
+          "targets": [
+            [
+              "css=i",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='result']/i",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//i",
+              "xpath:position"
+            ],
+            [
+              "xpath=//i[contains(.,'invalid input')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "invalid input"
+        },
+        {
+          "id": "1e5a9d45-fc24-4329-8ac6-1894dd581fbd",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "26b5004f-d390-45f0-a2c7-4d1e9885d209",
+      "name": "1.2. Verify Divide Operator",
+      "commands": [
+        {
+          "id": "f7f30b07-9a42-4dd5-aebc-dea1874fbbdc",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c5b0b9d3-2bc8-4c88-beb2-87a6746c5d5f",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f43a4338-9182-414d-b4b2-5e08089412e0",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "/ (divide)"
+        },
+        {
+          "id": "475a6ea3-2241-44cc-9174-a7c711a7d76a",
+          "comment": "",
+          "command": "verifySelectedValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "/"
+        },
+        {
+          "id": "d54879e0-7673-4146-ac44-e941477d203f",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "d74388f0-3b39-4b94-8b07-a09ab9bcbb74",
+      "name": "1.2. Verify Sum Operator",
+      "commands": [
+        {
+          "id": "611637fa-a60c-416e-a2bf-87bebbbfdd0d",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a40097f8-042c-4714-b141-4edd524a4037",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "27948e89-e272-4315-9656-40bf1fd9e602",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "label=+ (sum)"
+        },
+        {
+          "id": "5483c65a-e34d-4b38-9d2b-65c3b3ef2725",
+          "comment": "",
+          "command": "verifySelectedValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+"
+        },
+        {
+          "id": "e118cd2e-957e-4bdb-96b3-215b8d4c0c69",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "faa85ff7-0af2-4b22-b76c-8e630a306e21",
+      "name": "1.2. Verify Substract Operator",
+      "commands": [
+        {
+          "id": "b04a516e-0e82-46a6-89c9-94e6f70418bc",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "85fb1658-de40-4e4d-b0fc-42cd813f8b4d",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8535691f-d67b-420d-ac2d-99cf27bfbc02",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "- (subtract)"
+        },
+        {
+          "id": "527fc7ef-9c86-4547-8bd7-6071ed28c94b",
+          "comment": "",
+          "command": "verifySelectedValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "-"
+        },
+        {
+          "id": "d4ede379-d2f6-405b-acaf-5eac01287de5",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "248e9bd3-5923-4799-a719-51d257860ffd",
+      "name": "1.2. Verify Multiply Operator",
+      "commands": [
+        {
+          "id": "88f2ea95-ec58-4f89-80a7-61a97f4fe539",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1c4c65af-65ca-40f1-beca-8e7b4e80df51",
+          "comment": "",
+          "command": "click",
+          "target": "id=operation",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "164a1d1e-84c8-4a53-a38b-f290c8500984",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "* (multiply)"
+        },
+        {
+          "id": "289ef0c0-1e22-46f6-87ba-83b7bfe72837",
+          "comment": "",
+          "command": "verifySelectedValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "*"
+        },
+        {
+          "id": "480869e4-8deb-4db5-89cd-a6e83a67e0be",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "f6a9f3e8-ed84-40dc-b4f4-5cc01eaa0e39",
+      "name": "1.3. Sum Two Numbers",
+      "commands": [
+        {
+          "id": "e768f4a8-ebb6-4d76-8b86-2d2464f274e4",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5d3892e4-32ae-42b7-be85-cc77f6c6976e",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "15"
+        },
+        {
+          "id": "0bff473e-3d63-41a6-8e9a-2d5c284b982c",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "fd7c913a-d6e8-45e7-aa2d-eed950b96e5c",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "3"
+        },
+        {
+          "id": "9ee6dfd2-b00b-43c7-bc5d-2437a3c2c36b",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2ce599a7-63c2-4d04-9d56-20fd3f40276a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "18"
+        },
+        {
+          "id": "ffa42cf5-77f0-4774-af10-5f09b463beef",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "083e2d4d-368d-4fab-aad2-574fab90bb91",
+      "name": "1.3. Substract Two Numbers",
+      "commands": [
+        {
+          "id": "f60122bc-6e78-45fd-a18e-2414a3f09c64",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1779fcc4-d8b3-4c09-aaca-d3856094351f",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "15"
+        },
+        {
+          "id": "1c460457-d7bc-4e0b-88a2-786ac629fad9",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "- (subtract)"
+        },
+        {
+          "id": "3ebea60b-53cf-4fcb-8cb9-c1570a6cafa1",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "3"
+        },
+        {
+          "id": "27b99a0f-7c91-4f7b-a1d4-193d9081bc00",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "46424768-3126-4c4b-9371-ce04c3a2bb3e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "12"
+        },
+        {
+          "id": "a57342ad-ea37-4d7e-a94d-a59bb35ccde4",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "037cc147-6e28-4f3a-bb28-4be648f4f93b",
+      "name": "1.3. Divide Two Numbers",
+      "commands": [
+        {
+          "id": "c94c8847-fd1b-4f91-bbad-3407f350a4ee",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "50848d28-e8af-4327-bac0-2d2f159ebc7e",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "15"
+        },
+        {
+          "id": "5ff46136-ce51-489d-8ba4-5464ed6d99af",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "/ (divide)"
+        },
+        {
+          "id": "8a53d2d2-b6f2-4df9-aca9-3ffacfb1ce1b",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "3"
+        },
+        {
+          "id": "c527dfb3-e121-4420-ba0b-f34ca0f7284c",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b001ee66-cce7-44a5-bdfa-69c1e2f46281",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "5"
+        },
+        {
+          "id": "974bedb9-c955-4817-b214-dded1a1713da",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "49186cbe-5e89-4fed-8ad0-f59d4a5895b4",
+      "name": "1.3. Multiply Two Numbers",
+      "commands": [
+        {
+          "id": "cf2c965d-096e-440d-a42f-d58144d90866",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4430ce4a-b750-414f-beb6-c23076ec6197",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "15"
+        },
+        {
+          "id": "ba2a46f3-4f31-4acd-8d0a-cb03d475f95f",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "* (multiply)"
+        },
+        {
+          "id": "ab059f92-ea37-4f5e-b727-d52ab0acad2e",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "3"
+        },
+        {
+          "id": "5140b4c3-7684-406c-b53a-3dfd8886290c",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a8027e2d-d587-4553-b7e1-d3de3e67a8bf",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "45"
+        },
+        {
+          "id": "7c1e4ab1-e98b-4d68-9225-d347eddaed7b",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "659b779f-b1cd-468a-b132-ab2af0fdfa9b",
+      "name": "1.4. Reset Functionality First Number",
+      "commands": [
+        {
+          "id": "33c5ca99-9e78-415b-8bd7-3c63bd83925b",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a8eb36cd-4209-4db5-9f9a-647180de62ff",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "16"
+        },
+        {
+          "id": "265f5f77-8f10-4758-a26f-6d1be6e741ef",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number1",
+          "targets": [],
+          "value": "16"
+        },
+        {
+          "id": "5f98f6e6-8a86-4f95-adda-2712acff5439",
+          "comment": "",
+          "command": "click",
+          "target": "id=resetButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "776e614d-d112-4396-9387-8af85381cffd",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number1",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bda6e1bc-822f-455f-a238-1f464ddeaca1",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "57cfae49-aea5-4f8d-beaf-c2e0d4dafda5",
+      "name": "1.4. Reset Functionality Operation",
+      "commands": [
+        {
+          "id": "a58ed25d-7151-41a3-930b-35f32a0633ad",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ee9a8777-d12b-4958-81aa-39aff6cb7c93",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "14721de9-b9d2-4559-99d5-0fb9765546e1",
+          "comment": "",
+          "command": "assertSelectedValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+"
+        },
+        {
+          "id": "289313a8-0cef-4878-9497-9d4476b94a95",
+          "comment": "",
+          "command": "click",
+          "target": "id=resetButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a85f3d60-8064-434e-b44d-4e5af013aed7",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "-- select an operation --"
+        },
+        {
+          "id": "6219a5b2-3875-4679-b2e1-3416359b2a44",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "59189c33-c9fc-46a4-85df-55e9194838a7",
+      "name": "1.4. Reset Functionality Second Number",
+      "commands": [
+        {
+          "id": "359dc910-2ae8-4cff-a1dd-27bd6a92781c",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa7fe988-b5e1-4af7-ad69-5e43da08fcc6",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "16"
+        },
+        {
+          "id": "eb77eee6-f058-40b3-972a-837bb191228d",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number2",
+          "targets": [],
+          "value": "16"
+        },
+        {
+          "id": "4d0508e9-dba4-4fc1-b12a-3e887b98c66d",
+          "comment": "",
+          "command": "click",
+          "target": "id=resetButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "52f12f9a-002b-46ed-bf20-0ca339055a98",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f68f808f-5002-4504-a36e-5748553ed833",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "81fbe20b-91e2-494a-a66e-dbd3fd143e40",
+      "name": "1.4. Reset Functionality All",
+      "commands": [
+        {
+          "id": "741bebbf-98ad-40d4-863b-63f408babdea",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4dc8fffe-81b3-466a-9f5b-9f270241c9b8",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "3"
+        },
+        {
+          "id": "d31bac24-14b0-4dcd-b804-a697c8b37af1",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number1",
+          "targets": [],
+          "value": "3"
+        },
+        {
+          "id": "a7f5aed4-20a8-41b2-acb7-dea62f8daefc",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "b0498eba-738c-4f48-a51b-8806d30d98c8",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+"
+        },
+        {
+          "id": "c8cbe174-cb5f-45be-9c3b-30e094e1ddfe",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "12"
+        },
+        {
+          "id": "9f4b82f0-0c4d-4d29-9102-09b4c3aadde0",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number2",
+          "targets": [],
+          "value": "12"
+        },
+        {
+          "id": "c0d40a9c-e81c-4d11-846f-9e2e2725194c",
+          "comment": "",
+          "command": "click",
+          "target": "id=resetButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b169ec34-cdf4-4bac-af28-81a39fe12be2",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number1",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e794f0b7-48c3-4829-9377-eb0682b9a8ac",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=operation",
+          "targets": [],
+          "value": "-- select an operation --"
+        },
+        {
+          "id": "2daed876-f387-4115-b3ee-30f945240751",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=number2",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7fa33caa-e45d-40d0-be66-1b59ae896ede",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "28dbdecb-89f5-4b8f-864e-9a8e2ff6e94d",
+      "name": "1.5. Divided By Zero",
+      "commands": [
+        {
+          "id": "5dcaf374-7fc2-4498-b3b6-b5edb061c984",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8b6949bb-cc17-4048-89e8-29b028456a4f",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "50"
+        },
+        {
+          "id": "42c9be30-59ba-45bd-b416-2df842e3ac1d",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "/ (divide)"
+        },
+        {
+          "id": "de55e79f-5eae-42dc-9a09-3d4e2ecc9482",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "0"
+        },
+        {
+          "id": "99c42814-2b92-48fc-98f4-1115702f8ae7",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d3b58274-bfe9-448d-a1c6-065484636640",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "Undefined"
+        },
+        {
+          "id": "f949dfa4-9c65-4865-a490-0bf366d47d94",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "aa8736af-1f42-4d94-b23f-ae056c71af1e",
+      "name": "1.5. Decimal Numbers",
+      "commands": [
+        {
+          "id": "e41cf0d3-cfd6-4b90-86bb-afacb26938be",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a92c6084-fd5f-43f8-9902-0ee4b8fef593",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "2.5"
+        },
+        {
+          "id": "8c11028d-d7fc-4174-ba64-3a63a2566da6",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "8a83a9bf-bef2-4583-9c4d-d210d58546a3",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "3.5"
+        },
+        {
+          "id": "2d9aebe9-9ff0-407e-85d1-038b198aef5f",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "330f13bf-ccc1-4ce2-ad7c-857b2fa4734b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "6"
+        },
+        {
+          "id": "fc6d276d-0973-4f25-921f-a093179c370d",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "bfcedca2-ace6-4fff-b143-98386c28eff1",
+      "name": "1.5. Negative Numbers",
+      "commands": [
+        {
+          "id": "aaef922f-15cf-4c92-b019-44658eb74999",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "00a0b10e-c50f-4381-b271-6c72af67af54",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "-50"
+        },
+        {
+          "id": "730cc468-21d3-4aaa-9f9b-3d94e7b9e470",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "a2d6f626-9643-4654-888f-a48f02ed30c8",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "-30"
+        },
+        {
+          "id": "e62ffceb-764b-4aba-972a-9be9813fd39d",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d93a8df3-64d9-4692-b2f3-055801642344",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "-80"
+        },
+        {
+          "id": "8f49f278-f51a-4504-8bdd-e8e6a61a8fa7",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "1b700875-6031-45af-98d3-5e3af0a36619",
+      "name": "1.5. Calculate With Infinity",
+      "commands": [
+        {
+          "id": "a9a53343-dbf4-420d-8808-c5e9cf9686cf",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6d14fdce-76c6-40ed-8e77-a292a252cc5f",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "Infinity"
+        },
+        {
+          "id": "ef94312c-0138-4f7a-bef5-92aaef4e8897",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "35aae734-5909-45ec-89e6-3bcfdad0a9ee",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "6"
+        },
+        {
+          "id": "e5480ac9-678b-4053-9dc1-81627a7a59aa",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ee9999e9-b723-458e-b857-38f259aae87a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "Infinity"
+        },
+        {
+          "id": "b4351f4d-4483-425a-b067-617cc80f4c48",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "e3f4e89e-3336-403a-9cc8-9c072e971fb9",
+      "name": "1.5. Trailing Spaces",
+      "commands": [
+        {
+          "id": "2f9e5a8e-8004-4811-bdf4-cf7ea4defb6f",
+          "comment": "",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7c5837ab-8b21-4274-bafb-86139bf3a68d",
+          "comment": "",
+          "command": "type",
+          "target": "id=number1",
+          "targets": [],
+          "value": "               2.5"
+        },
+        {
+          "id": "4155b9a8-6db0-4cee-9532-409c59f724df",
+          "comment": "",
+          "command": "select",
+          "target": "id=operation",
+          "targets": [],
+          "value": "+ (sum)"
+        },
+        {
+          "id": "4782856a-baee-4c0b-9b74-689eb19368eb",
+          "comment": "",
+          "command": "type",
+          "target": "id=number2",
+          "targets": [],
+          "value": "3.5     "
+        },
+        {
+          "id": "7773f487-70d4-465d-8b89-f8d9e6ff3932",
+          "comment": "",
+          "command": "click",
+          "target": "id=calcButton",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "54cedeae-2310-4bf4-a0a6-66387ccb0e22",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=pre",
+          "targets": [],
+          "value": "6"
+        },
+        {
+          "id": "a3076ede-477c-4790-ac55-99f02e703c0f",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "6dc1573a-9d51-4a25-bb15-0acf2927c406",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "2e23c97b-1b1c-492f-b86c-e2ad49c098f3",
+        "a307a32a-dc85-4852-b2a1-d09777d32f91",
+        "e9a15b59-84ae-4f20-b650-609f37bf3880",
+        "b97c594d-da1d-459c-8f41-6055ec14f9a5",
+        "c3586e29-3395-41df-b1c3-3260e99d94e5"
+      ]
+    }
+  ],
+  "urls": [
+    "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com/number-calculator/"
+  ],
+  "plugins": []
+}

@@ -1,0 +1,295 @@
+{
+  "id": "b8d00436-5f49-4230-9749-de65a830727d",
+  "version": "2.0",
+  "name": "TheRevueCraftersTestProject",
+  "url": "https://d3s5nxhwblsjbi.cloudfront.net/",
+  "tests": [{
+    "id": "56d4dfd8-a32c-4feb-b396-fa8435f8578c",
+    "name": "01. HomePageNavigationTest",
+    "commands": [{
+      "id": "2f031bb7-b95c-4348-ae8b-77f2622a058b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04d810cc-d87e-4356-83a9-e06591ef2dfd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67cdb678-028c-4d61-a5c4-752d8ed559aa",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "RevueCrafters",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e8209f9a-d8a9-40c0-961b-d4e8e6dc1f67",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link active']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bb1d59d-1861-4f80-bda5-dec45f3e58ba",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link' and contains(text(), 'About')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a064a02a-b71b-4f8b-910b-224e24cd2e02",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link' and contains(text(), 'Services')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ed024b5-e448-44bd-9ae4-ea31c94acb6e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Register')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1cb0f70-d506-4131-9699-e491d583a636",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "33c36999-7385-4c63-9e66-4dd7680eb7d4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8e2188c5-3119-49b1-88df-15729cd580df",
+    "name": "02. LogInTest",
+    "commands": [{
+      "id": "e829b732-d153-47cc-911a-ac3a5baa956a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4840d6a6-1a52-4b20-82ba-8a17f349ecba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bac2a78-0435-4380-a696-a5cab7bc64a0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6d3289e-eecb-4ae0-845a-181c27873fcf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='email']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b2cca7b-3af7-4876-9b4f-fb5ba93a235f",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='email']",
+      "targets": [],
+      "value": "userfortesting@example.com"
+    }, {
+      "id": "e967f903-3daa-401e-8098-6bc10e5b60cd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09e37e61-8196-40aa-902d-82daa6951946",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "1449b90a-f572-4ce8-a431-d1f9b00347ec",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42428f01-e81c-4a78-8ec3-9b0f5f56f7dd",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link active']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8111f80-484f-456e-a129-1ec11d503d97",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "337e7be4-1ca1-49c4-bc50-e04e18e3bad3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Profile')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a16944b-9e72-49a8-a182-d2f0276d6e93",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Logout')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f18917db-1fff-4b73-a45e-a46c7d40f11b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='col-md-6 gx-5 mb-4']/h4",
+      "targets": [],
+      "value": "Dear, UserForTesting"
+    }, {
+      "id": "ba8cd6bd-7316-4c3b-8e2f-c0ebd5f31b45",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Logout')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3dd811f3-fc37-4c9d-ab01-e9b64c6e4051",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='col-md-6 gx-5 mb-4']/h4[1]",
+      "targets": [],
+      "value": "Explore the World of Reviews"
+    }, {
+      "id": "1275679e-1738-455f-bbd3-bb6892dff93d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d9597c88-08e9-4794-b740-b75e3017e2cc",
+    "name": "03. VerifyProfileTest",
+    "commands": [{
+      "id": "b9e2097b-d456-4e4e-a273-b4372615e2ef",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5499fd6-4708-4dc8-9be1-f59a6c1423a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a9703a-c353-4fa1-9d55-9540b553ad23",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Login')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b783cbc-d145-4b88-96d0-4fbc0e645188",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='email']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0aed2415-c1f2-4765-a018-3f0949c714f3",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='email']",
+      "targets": [],
+      "value": "userfortesting@example.com"
+    }, {
+      "id": "7b280b0d-b6b8-449d-b5db-2211e0e03d88",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@type='password']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51db5ca3-3018-4eff-bcd1-343f28f3ed93",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@type='password']",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "fb3c2990-ed82-41de-af9f-e4761dffd89c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "32f6e1cf-9b9f-4aa8-8f45-8dc2a59b0a54",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Profile')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3db49c3e-3e75-4304-a5a0-657ad54ecb4b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//div[@class='ms-3']/h5",
+      "targets": [],
+      "value": "UserForTesting"
+    }, {
+      "id": "0b892a06-45d7-42ec-b49b-cd174396a5bd",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Logout')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84fbf3bf-9e31-4fff-b9c8-090cda677f28",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//a[@class='nav-link text-dark' and contains(text(), 'Register')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f9a40c4-2192-4e1d-b727-16b9b4b874a8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ac6514b1-8f7d-4dad-b676-14187f5d5aa9",
+    "name": "UserActionsTests",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["56d4dfd8-a32c-4feb-b396-fa8435f8578c"]
+  }],
+  "urls": ["https://d3s5nxhwblsjbi.cloudfront.net/"],
+  "plugins": []
+}
