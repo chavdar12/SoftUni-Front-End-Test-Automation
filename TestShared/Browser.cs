@@ -9,6 +9,9 @@ public static class Browser
         options.AddArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080");
         // Chrome's leaked-password popup blocks the page after logging in with public demo credentials.
         options.AddUserProfilePreference("profile.password_manager_leak_detection", false);
+        // Chrome now tries HTTPS first and shows a warning page for HTTP-only course sites (uitestingplayground.com).
+        options.AddUserProfilePreference("https_only_mode_enabled", false);
+        options.AddArgument("--disable-features=HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,HttpsFirstModeV2ForTypicallySecureUsers");
         return new ChromeDriver(options);
     }
 

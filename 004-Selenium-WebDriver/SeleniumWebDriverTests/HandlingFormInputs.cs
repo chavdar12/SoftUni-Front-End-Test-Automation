@@ -55,11 +55,8 @@ namespace HandlingFormInputs
             // Fill in date
             // driver.FindElement(By.Id("dob']")).SendKeys("01/01/1994");
 
-            // Generate an unique email address
-            Random rnd = new Random();
-            // Generate a random number between 1000 and 9999
-            int num = rnd.Next(1000, 9999);
-            string email = "fiona.apple" + num.ToString() + "@example.com";
+            // Generate an unique email address; a 4-digit random number collides with accounts already on this shared demo site
+            string email = "fiona.apple" + Guid.NewGuid().ToString("N") + "@example.com";
 
             driver.FindElement(By.XPath("//input[@name='email_address']")).SendKeys(email);
 
